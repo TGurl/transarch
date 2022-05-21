@@ -1,10 +1,8 @@
-# ----------------------------- archiso base
-alsa-utils
+# ------------------------------------- Arch
 amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
-base
 bind-tools
 brltty
 broadcom-wl
@@ -34,7 +32,7 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
+#grml-zsh-config
 grub
 hdparm
 hyperv
@@ -50,11 +48,7 @@ less
 lftp
 libfido2
 libusb-compat
-linux
-linux-atm
-linux-firmware
-linux-firmware-marvell
-livecd-sounds
+#livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -68,13 +62,11 @@ mkinitcpio-archiso
 mkinitcpio-nfs-utils
 modemmanager
 mtools
-nano
 nbd
 ndisc6
 nfs-utils
 nilfs-utils
 nmap
-ntfs-3g
 nvme-cli
 open-iscsi
 open-vm-tools
@@ -88,7 +80,6 @@ pcsclite
 ppp
 pptpclient
 pv
-qemu-guest-agent
 refind
 reflector
 reiserfsprogs
@@ -99,13 +90,11 @@ screen
 sdparm
 sg3_utils
 smartmontools
-sof-firmware
 squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
 tcpdump
-terminus-font
 testdisk
 tmux
 tpm2-tss
@@ -113,8 +102,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -122,4 +109,148 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+
+# -------------------------------- TransArch
+
+# --------------- Archives
+#p7zip
+#unrar
+#unzip
+#zip
+
+# ------------------- Apps
+#firefox
+#gimp
+#inkscape
+#pcmanfm
+#xarchiver
+
+# ------------------ Bspwm
+#bspwm
+#dmenu
+#dunst
+#feh
+#kitty
+#lxappearance
+#nitrogen
+#polybar
+#simpleterminal
+#sxhkd
+
+# ---------------- Openbox
+feh
+kitty
+lxappearance
+lxappearance-obconf
+menumaker
+nitrogen
+obconf
+openbox
+pcmanfm
+simpleterminal
+xarchiver
+
+# ---------------- Editors
+#nano
+#neovim
+#vim
+
+# ------------------ Fonts
+#noto-fonts
+#noto-fonts-emoji
+#ttf-dejavu
+#ttf-font-awesome
+#ttf-hack
+
+# ------------------ Media
+#alsa-utils
+#ffmpeg
+#ffmpegthumbnailer
+#gst-libav
+#gst-plugins-bad
+#gst-plugins-base
+#gst-plugins-good
+#gst-plugins-ugly
+#mpv
+#pipewire
+#pipewire-alsa
+#pipewire-jack
+#pipewire-pulse
+#sof-firmware
+#wireplumber
+
+# ------------------ Shell
+bat
+exa
+fzf
+git
+git-cli
+ranger
+ripgrep
+starship
+ueberzug
+ufetch-git
+viu
+yt-dlp
+zoxide
 zsh
+zsh-completions
+zsh-syntax-highlighting
+
+# ----------------- System
+base
+base-devel
+gvfs
+linux
+linux-headers
+linux-atm
+linux-firmware
+linux-firmware-marvell
+lsb-release
+networkmanager
+networkmanager-openvpn
+nm-connection-editor
+ntfs-3g
+sddm
+terminus-font
+tumbler
+xdg-user-dirs
+xdg-user-dirs-gtk
+
+# ----- TransArch packages
+transarch-backgrounds
+transarch-config
+transarch-grub-theme
+transarch-fonts
+transarch-hooks
+transarch-sddm-theme
+
+# ------------------- Xorg
+mesa
+mesa-utils
+qemu-guest-agent
+virtualbox-guest-utils
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-vmmouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-fbdev
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-vesa
+xf86-video-vmware
+xorg-apps
+xorg-server
+xorg-xinit
+xorg-xrandr
+xterm
+
+##NVIDIA DRIVERS
+#nvidia
+#nvidia-dkms
+#nvidia-utils
+#nvidia-settings
+#opencl-nvidia
