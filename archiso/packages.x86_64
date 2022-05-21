@@ -113,71 +113,58 @@ xl2tpd
 # -------------------------------- TransArch
 
 # --------------- Archives
-#p7zip
-#unrar
-#unzip
-#zip
+p7zip
+unrar
+unzip
+zip
 
 # ------------------- Apps
-#firefox
-#gimp
-#inkscape
-#pcmanfm
-#xarchiver
+firefox
+gimp
+inkscape
+pcmanfm
+xarchiver
 
 # ------------------ Bspwm
-#bspwm
-#dmenu
-#dunst
-#feh
-#kitty
-#lxappearance
-#nitrogen
-#polybar
-#simpleterminal
-#sxhkd
-
-# ---------------- Openbox
+bspwm
+dmenu
+dunst
 feh
 kitty
 lxappearance
-lxappearance-obconf
-menumaker
 nitrogen
-obconf
-openbox
-pcmanfm
+polybar
 simpleterminal
-xarchiver
+sxhkd
 
 # ---------------- Editors
-#nano
-#neovim
-#vim
+nano
+neovim
+vim
 
 # ------------------ Fonts
-#noto-fonts
-#noto-fonts-emoji
-#ttf-dejavu
-#ttf-font-awesome
-#ttf-hack
+noto-fonts
+noto-fonts-emoji
+ttf-dejavu
+ttf-font-awesome
+ttf-hack
 
 # ------------------ Media
-#alsa-utils
-#ffmpeg
-#ffmpegthumbnailer
-#gst-libav
-#gst-plugins-bad
-#gst-plugins-base
-#gst-plugins-good
-#gst-plugins-ugly
-#mpv
-#pipewire
-#pipewire-alsa
-#pipewire-jack
-#pipewire-pulse
-#sof-firmware
-#wireplumber
+alsa-utils
+ffmpeg
+ffmpegthumbnailer
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+mpv
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+sof-firmware
+wireplumber
 
 # ------------------ Shell
 bat
@@ -211,11 +198,15 @@ networkmanager
 networkmanager-openvpn
 nm-connection-editor
 ntfs-3g
+paru-bin
 sddm
+qt5-graphicaleffects
+qt5-quickcontrols2
 terminus-font
 tumbler
 xdg-user-dirs
 xdg-user-dirs-gtk
+yay-bin
 
 # ----- TransArch packages
 transarch-backgrounds
