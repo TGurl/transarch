@@ -1,0 +1,11 @@
+root:x:0:root
+adm:x:4:trans
+wheel:x:10:trans
+network:x:18:trans
+storage:x:21:trans
+power:x:23:trans
+audio:x:15:trans
+video:x:16:trans
+scanner:x:20:trans
+optical:x:22:trans
+users:x:985:
