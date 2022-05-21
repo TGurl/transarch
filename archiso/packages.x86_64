@@ -184,7 +184,7 @@ bat
 exa
 fzf
 git
-git-cli
+github-cli
 ranger
 ripgrep
 starship
