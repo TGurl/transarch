@@ -1,0 +1,75 @@
+#!/usr/bin/env python
+
+import os
+import shutil
+from datetime import date
+
+PROFILE='archiso/profiledef.sh'
+
+def _yesno(question, yes_default=False):
+    loop = True
+    question = f"{question} "
+    if yes_default:
+        question += "(Y/n) "
+        default = 'y'
+    else:
+        question += "(y/N) "
+        default = 'n'
+
+    while loop:
+        answer = input(question).lower()
+
+        if answer == '':
+            answer = default
+
+        if answer in ['y', 'n']:
+            loop = False
+        else:
+            print("Please answer either y or n ...")
+
+    if answer == 'y':
+        return True
+    else:
+        return False
+
+
+def clean_system(clean_cache = False):
+    print(":: cleaning system ...")
+    if clean_cache == True:
+        os.system('pacman -Scc')
+
+    if os.path.exists('work'):
+        os.system('rm -rf work')
+
+    if os.path.exists('out'):
+        os.system('rm -rf out')
+
+
+def build_iso(verbose=True):
+    print(":: Building ISO")
+    v = ''
+    if verbose:
+        v = '-v '
+
+    os.system(f"mkarchiso {v}-w work -o out archiso")
+
+
+def main():
+    if os.geteuid() != 0:
+        print("You have to run this script as root!")
+        exit(1)
+
+    verbose = _yesno("See output?", yes_default=True)
+    clean = _yesno('Clean pacman cache?', yes_default=False)
+
+    if clean:
+        clean_system(clean_cache=True)
+    else:
+        clean_system(clean_cache=False)
+
+
+    build_iso(verbose)
+
+
+if __name__ == "__main__":
+    main()
