@@ -204,8 +204,8 @@ qt5-graphicaleffects
 qt5-quickcontrols2
 terminus-font
 tumbler
-xdg-user-dirs
-xdg-user-dirs-gtk
+#xdg-user-dirs
+#xdg-user-dirs-gtk
 yay-bin
 
 # ----- TransArch packages
